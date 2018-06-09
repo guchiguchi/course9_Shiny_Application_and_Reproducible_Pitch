@@ -8,9 +8,10 @@ fluidPage(
   titlePanel("Japanese Population Transition"),
   p(" "),
   p("This is a Japanese Prefecture population transition plot."),
-  p("Select a prefecture from select box below and the plot show you population bar plot from 1975 to 2006"),
+  p("Select a prefecture from select box below and it show you population from 1975 to 2016"),
   
-  p("I use rusult of Japanese System of Social and Demographic Statistics. You can get the data from e-Stat(Statics of Japan (https://www.e-stat.go.jp/en))"),
+  p("I use rusult of Japanese System of Social and Demographic Statistics."),
+  p("You can get the data from e-Stat(https://www.e-stat.go.jp/en)"),
   
   # Generate a row with a sidebar
   sidebarLayout(      

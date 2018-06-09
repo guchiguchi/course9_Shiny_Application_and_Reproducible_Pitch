@@ -1,0 +1,12 @@
+name: japanesepopulation
+title: japanesepopulation
+username:
+account: guchiguchi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 357976
+bundleId: 1420029
+url: https://guchiguchi.shinyapps.io/japanesepopulation/
+when: 1528526273.95795
+asMultiple: FALSE
+asStatic: FALSE

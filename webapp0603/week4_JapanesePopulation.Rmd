@@ -9,32 +9,91 @@ output: slidy_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## R Markdown
+## Summary
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
-
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with R Output
+- This presentation shows you about Japanese population.
+- Japan is aging ever faster.
+- It is said that Japanese population is decreasing.
+- But some area, mainly in large cities, is increasing population.
 
 
-```{r}
+## R Code
+  
+```
+#library
 library(dplyr)
+library(ggplot2)
+library(scales)
+
+#data 
+JapanesePopulation <- readRDS("japanesepopulation/data/JapanesePopulation.rds")
+
+
+JapanesePopulation %>% 
+  filter(AREA == "All Japan") %>% 
+  select(year, Population) -> ggplot_data 
+```
+data is in my [repo](https://github.com/guchiguchi/course9_Shiny_Application_and_Reproducible_Pitch/blob/master/data/JapanesePopulation.rds)
+
+## Increasing Area
+```{r message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+
+JapanesePopulation <- readRDS("japanesepopulation/data/JapanesePopulation.rds")
+JapanesePopulation %>% filter(AREA == "All Japan") %>% select(year, Population) -> ggplot_data 
+```
+
+### Tokyo
+```{r fig2, fig.height = 3, fig.width = 13, fig.align = "center"}
+JapanesePopulation %>% filter(AREA == "Tokyo-to") %>% select(year, Population) -> ggplot_data
 ggplot_data %>% 
   ggplot(aes(x = year, y = Population)) + 
-  geom_bar(stat = "identity")+
+  geom_bar(stat = "identity", fill =  "skyblue")+
   scale_y_continuous(labels = comma)
 ```
 
-## Slide with Plot
-
-```{r pressure}
-plot(pressure)
+### Kanagawa
+```{r fig3, fig.height = 3, fig.width = 13, fig.align = "center"}
+JapanesePopulation %>% filter(AREA == "Kanagawa-ken") %>% select(year, Population) -> ggplot_data
+ggplot_data %>% 
+  ggplot(aes(x = year, y = Population)) + 
+  geom_bar(stat = "identity", fill =  "skyblue")+
+  scale_y_continuous(labels = comma)
 ```
+
+## Decreasing Area
+
+###Hokkaido 
+```{r fig4, fig.height = 3, fig.width = 13, fig.align = "center"}
+JapanesePopulation %>% filter(AREA == "Hokkaido") %>% select(year, Population) -> ggplot_data
+ggplot_data %>% 
+  ggplot(aes(x = year, y = Population)) + 
+  geom_bar(stat = "identity", fill =  "blue")+
+  scale_y_continuous(labels = comma)
+```
+
+
+###Tottori-ken
+```{r fig5, fig.height = 3, fig.width = 13, fig.align = "center"}
+JapanesePopulation %>% filter(AREA == "Tottori-ken") %>% select(year, Population) -> ggplot_data
+ggplot_data %>% 
+  ggplot(aes(x = year, y = Population)) + 
+  geom_bar(stat = "identity", fill =  "blue")+
+  scale_y_continuous(labels = comma)
+```
+
+
+## Thank you!!
+
+###This is [my app](https://guchiguchi.shinyapps.io/japanesepopulation/). Please check it!!
+
+
+
+
+
+
+
+
 

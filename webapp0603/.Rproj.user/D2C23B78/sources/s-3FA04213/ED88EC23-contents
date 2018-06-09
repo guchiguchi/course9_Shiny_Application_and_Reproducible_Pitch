@@ -19,7 +19,7 @@ ggplot_data %>%
 
 
 
-
+png(filename="bench_query_sort.png", width=600, height=600)
 ggplot_data %>% 
   ggplot(aes(x = year, y = Population)) + 
   geom_bar(stat = "identity")+
