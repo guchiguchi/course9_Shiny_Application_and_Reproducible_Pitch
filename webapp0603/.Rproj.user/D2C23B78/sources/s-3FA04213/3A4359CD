@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1528120673670.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3A4359CD",
+    "lastKnownWriteTime" : -6146761304871796736,
+    "last_content_update" : 1528120673670,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "A1DBB553",
+        "caption" : "JapanesePopulation",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=JapanesePopulation&cache_key=A1DBB553",
+        "displayedObservations" : "2016",
+        "environment" : "",
+        "object" : "JapanesePopulation",
+        "preview" : "0",
+        "totalObservations" : "2016",
+        "variables" : "7"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

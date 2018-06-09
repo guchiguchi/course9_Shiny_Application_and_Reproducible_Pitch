@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1528031956502.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "584869714",
+    "id" : "CD626A8C",
+    "lastKnownWriteTime" : 1528031952,
+    "last_content_update" : 1528031952,
+    "path" : "~/Documents/cousera/9_DevelopingDataProducts/course9_Shiny_Application_and_Reproducible_Pitch/webapp0603/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1528032743718.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F8D696D2",
+    "lastKnownWriteTime" : 1528034008,
+    "last_content_update" : 1528034008598,
+    "path" : "~/Documents/cousera/9_DevelopingDataProducts/course9_Shiny_Application_and_Reproducible_Pitch/webapp0603/japanesepopulation/global.R",
+    "project_path" : "japanesepopulation/global.R",
+    "properties" : {
+        "cursorPosition" : "8,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

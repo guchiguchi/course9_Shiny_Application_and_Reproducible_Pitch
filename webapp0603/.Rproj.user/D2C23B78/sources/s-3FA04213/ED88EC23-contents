@@ -1,0 +1,35 @@
+barplot(JapanesePopulation %>% filter(AREA == "All Japan") %>% select(year, Population),
+        main=input$region,
+        ylab="Number of Telephones",
+        xlab="Year")
+})
+
+
+JapanesePopulation %>% filter(AREA == "All Japan") %>% select(year, Population) -> ggplot_data 
+JapanesePopulation$Population_thousand<- JapanesePopulation$Population/1000
+
+saveRDS(JapanesePopulation, "JapanesePopulation.rds")
+
+hist(JapanesePopulation$Population/1000)
+ggplot_data %>% 
+  ggplot(aes(x = year, y = Population)) + 
+  geom_bar(stat = "identity") +
+  scale_y_continuous(labels = comma)
+  
+
+
+
+
+ggplot_data %>% 
+  ggplot(aes(x = year, y = Population)) + 
+  geom_bar(stat = "identity")+
+  scale_y_continuous(labels = comma)
+
+, 
+                   limits = c(1976, 2016))
+
+
+
+
+
+
